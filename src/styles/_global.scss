@@ -1,0 +1,36 @@
+@import "./variables";
+
+#root {
+  background: white;
+  font-family: open_sans;
+}
+.main-container {
+  margin-top: -82px;
+}
+
+.font-xs {
+  font-size: $font-xs;
+}
+
+.font-sm {
+  font-size: $font-sm;
+}
+.font-mmd {
+  font-size: $font-mmd;
+}
+
+.font-md {
+  font-size: $font-md;
+}
+
+.font-lg {
+  font-size: $font-lg;
+}
+
+.border-left-width {
+  border-left-width: 3px !important;
+}
+
+.letter-space {
+  letter-spacing: 4px;
+}

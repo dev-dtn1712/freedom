@@ -1,0 +1,188 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+
+.product {
+  .product-title {
+    max-width: 400px;
+    min-width: 302px;
+    font-size: $font-mmd;
+  }
+  .description {
+    line-height: 20px;
+    width: 50%;
+  }
+
+  .pay-product {
+    max-height: 800px;
+    min-height: 550px;
+    .freedom-pay-img {
+      max-height: 600px;
+      min-height: 200px;
+      max-width: 840px;
+      background-image: url('../../assets/images/freedome-pay.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: -90px;
+    }
+  }
+
+  .title {
+    letter-spacing: 5px;
+  }
+
+  .life-insurance {
+    background-color: black;
+    .life-insurance-description {
+      .description {
+        width: 100%;
+      }
+    }
+    .life-insurence-image {
+      max-width: 800px;
+      position: relative;
+      min-width: 400px;
+      img {
+        width: 120%;
+        top: auto;
+      }
+    }
+  }
+
+  .individual-life-insurance {
+    height: 700px;
+    background: linear-gradient(189.98deg, #FFFFFF 0%, #f7f7f7 100%);
+    .individual-product-image {
+      .individual-product {
+        background-image: url('../../assets/images/individualDotsMockup.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .product {
+    .freedom-pay-img {
+      background-size: contain !important;
+      background-position-x: -70px !important;
+      padding: 0px !important;
+    }
+    .description {
+      width: 100%;
+    }
+
+    .life-insurance {
+      background-color: black;
+      .life-insurance-description {
+        margin-left: 0%;
+        .description {
+          width: 100%;
+        }
+      }
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-between(sm, md) {
+  .product {
+    .freedom-pay-img {
+      background-size: contain !important;
+      background-position-x: -60px !important;
+      padding: 0px !important;
+    }
+    .description {
+      width: 100%;
+    }
+    .product-title {
+      font-size: $font-sm;
+    }
+
+    .life-insurance {
+      background-color: black;
+      .life-lifeInsurance-right {
+        max-height: 300px;
+        min-height: 280px;
+        background-color: black;
+      }
+      .life-insurance-description {
+        margin-left: 0%;
+        .description {
+          width: 100%;
+        }
+      }
+      .life-insurence-image {
+        max-width: 700px;
+        min-width: 400px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-between(xs, sm) {
+  .product {
+    .pay-product {
+      height: 735px;
+    }
+    .freedom-pay-img {
+      background-size: cover !important;
+      background-position-x: -10px !important;
+      padding: 0px !important;
+    }
+    .product-title {
+      font-size: $font-sm;
+    }
+    .description {
+      width: 100%;
+    }
+
+    .life-insurance {
+      background-color: black;
+      .life-lifeInsurance-right {
+        max-height: 300px;
+        min-height: 120px;
+        background-color: black;
+      }
+      .life-insurance-description {
+        margin-left: 0%;
+        .description {
+          width: 100%;
+        }
+      }
+      .life-insurence-image {
+        max-width: 700px;
+        min-width: 290px;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 315px;
+          top: auto;
+        }
+      }
+    }
+
+    .individual-life-insurance {
+      max-height: 1000px;
+      min-height: 880px;
+      background: linear-gradient(189.98deg, #FFFFFF 0%, #f7f7f7 100%);
+      .individual-product-image {
+        max-height: 700px;
+        min-height: 500px;
+        .individual-product {
+          background-image: url('../../assets/images/individualDotsMockup.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position-x: 70%;
+          background-position-y: 0px;
+        }
+      }
+    }
+  }
+}

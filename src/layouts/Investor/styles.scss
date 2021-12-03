@@ -1,0 +1,74 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+
+.investors {
+  .grey-section {
+    width: 40%;
+    background-color: #FAFAFA;
+    height: 38vw;
+  }
+  .invetor-pic {
+    margin-top: 120px;
+    width: 100%;
+  }
+  .investment-desc {
+    width: 389px;
+  }
+  .tech-investor {
+    width: 500px;
+  }
+  .dot-image {
+    width: 250px;
+    right: 15px;
+  }
+}
+
+@include media-breakpoint-between(sm, md) {
+  .investors {
+    .grey-section {
+      width: 40%;
+      background-color: #FAFAFA;
+      height: 40vw;
+    }
+    .invetor-pic {
+      margin-top: 120px;
+      width: 100%;
+    }
+    .investment-desc {
+      width: 310px;
+    }
+    .tech-investor {
+      width: 400px;
+    }
+    .dot-image {
+      width: 250px;
+      top: 40%;
+      right: 15px;  
+    }
+  }
+}
+
+@include media-breakpoint-between(xs, sm) {
+  .investors {
+    .grey-section {
+      width: 75%;
+      background-color: #FAFAFA;
+      height: 430px;
+    }
+    .invetor-pic {
+      margin-top: 120px;
+      width: 100%;
+    }
+    .investment-desc,
+    .tech-investor {
+      width: 100%;
+    }
+    .dot-image {
+      width: 250px;
+      right: 15px;
+      top: 50%;
+    }
+  }
+}

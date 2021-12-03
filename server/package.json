@@ -1,0 +1,7 @@
+{
+  "name": "freedomtechsite-server",
+  "private": true,
+  "dependencies": {
+    "serve": "^11.1.0"
+  }
+}

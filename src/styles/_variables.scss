@@ -1,0 +1,40 @@
+$brand-color: #FF4102;
+$primary-color: #000000;
+$backup-color: #ffffff;
+
+$brand-bg-color: #f76b00;
+$primary-bg-color: #ffffff;
+$backup-bg-color: #f0f0f0;
+$nav-bg-color: #101c2a;
+$deny-bg-color: #4A4A4A;
+
+$primary: $primary-bg-color;
+$secondary: $nav-bg-color;
+$info: #45b8f1;
+$warning: #ea3900;
+$danger: #FF4102;
+$muted: #c4c4c4;
+
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "info":       $deny-bg-color,
+    "warning":    $warning,
+    "danger":     $danger,
+    "muted":      $muted,
+);
+
+$border-radius: 6px;
+$border-radius-lg: 10px;
+
+$font-xs: 0.82rem;
+$font-msm: 0.95rem;
+$font-sm: 1.32rem;
+$font-mmd: 1.6em;
+$font-md: 1.98rem;
+$font-lg: 2.14rem;
+
+$btn-border-radius: $border-radius;
+$card-border-radius: $border-radius-lg;
+
+@import "node_modules/bootstrap/scss/bootstrap";

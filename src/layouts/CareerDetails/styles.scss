@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+
+.career-details {
+  .start-job-line {
+    max-width: 80px;
+    min-width: 50px;
+  }
+  .dots-image {
+    position: absolute;
+    max-width: 300px;
+    min-width: 200px;
+    bottom: 325px;
+    left: 0px;
+  }
+  .grey-section {
+    bottom: 50%;
+    right: 0;
+    max-width: 450px;
+    min-width: 320px;
+    max-height: 450px;
+    min-height: 320px;
+  }
+}
+
+@include media-breakpoint-between(xs, lg) {
+  .career-details {
+    .grey-section, .start-job-line {
+      display: none !important;
+    }
+  }
+}
+
+@include media-breakpoint-between(xs, sm) {
+  .career-details {
+    .mobile-text-view {
+      line-height: 28px;
+    }
+    .mobile-title-view {
+      line-height: 40px;
+    }
+  }
+}
